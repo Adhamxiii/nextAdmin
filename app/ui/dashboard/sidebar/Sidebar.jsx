@@ -13,7 +13,7 @@ import {
 import styles from "./sidebar.module.css";
 import MenuLink from "./menuLink/MenuLink";
 import Image from "next/image";
-import { auth, signOut } from "@/app/auth";
+// import { auth, signOut } from "@/app/auth";
 
 const menuItems = [
   {
@@ -114,7 +114,7 @@ const Sidebar = async () => {
       <form
         action={async () => {
           "use server";
-          await signOut();
+          // await signOut();
         }}
       >
         <button className={`${styles.logout} ${styles.disabled}`}>
