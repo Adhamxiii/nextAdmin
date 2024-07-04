@@ -15,7 +15,7 @@ const UsersPage = async ({ searchParams }) => {
     <div className={styles.container}>
       <div className={styles.top}>
         <Search placeholder="Search for a user..." />
-        <Link href="/dashboard/users/add">
+        <Link href="users/add">
           <button className={styles.addButton}>Add New</button>
         </Link>
       </div>
@@ -51,7 +51,7 @@ const UsersPage = async ({ searchParams }) => {
               <td>{user.isActive ? "Active" : "Passive"}</td>
               <td>
                 <div className={styles.buttons}>
-                  <Link href={`/dashboard/users/${user.id}`}>
+                  <Link href={`users/${user.id}`}>
                     <button className={`${styles.button} ${styles.view}`}>
                       View
                     </button>
